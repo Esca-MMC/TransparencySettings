@@ -6,5 +6,5 @@
   "UniqueID": "Esca.TransparencySettings",
   "EntryDll": "TransparencySettings.dll",
   "MinimumApiVersion": "3.0.0-beta",
-  "UpdateKeys": [ "Nexus:" ]
+  "UpdateKeys": [ "Nexus:8891", "GitHub:Esca-MMC/TransparencySettings", "ModDrop:971985" ]
 }
