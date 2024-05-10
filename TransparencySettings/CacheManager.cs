@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
@@ -50,7 +50,7 @@ namespace TransparencySettings
 
         private static void UpdateTicking(object sender, UpdateTickingEventArgs e)
         {
-            CurrentPlayerTile = Game1.player.getTileLocation(); //update cached tile position of the current local player
+            CurrentPlayerTile = Game1.player.Tile; //update cached tile position of the current local player
         }
 
         private static void DayEnding(object sender, DayEndingEventArgs e)
