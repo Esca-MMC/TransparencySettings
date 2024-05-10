@@ -1,10 +1,7 @@
 ﻿using HarmonyLib;
 using Microsoft.Xna.Framework;
-using Netcode;
 using StardewModdingAPI;
-using StardewValley;
 using StardewValley.Buildings;
-using StardewValley.TerrainFeatures;
 using System;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 

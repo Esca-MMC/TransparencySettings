@@ -116,14 +116,14 @@ namespace TransparencySettings
                 for (int x = 0; x < patched.Count; x++) //for each instruction
                 {
                     if ((patched[x].opcode == OpCodes.Call || patched[x].opcode == OpCodes.Callvirt) && patched[x].operand?.ToString()?.Contains("Color", StringComparison.Ordinal) == true //if this code is a method call to get a Color
-                     && patched[x+1].opcode == OpCodes.Ldarg_0 //and the next code loads arg 0 (this object instance)
-                     && patched[x+2].opcode == OpCodes.Ldfld && patched[x+2].operand?.ToString().Contains("shakeRotation", StringComparison.Ordinal) == true) //and the next code loads the field shakeRotation
+                     && patched[x + 1].opcode == OpCodes.Ldarg_0 //and the next code loads arg 0 (this object instance)
+                     && patched[x + 2].opcode == OpCodes.Ldfld && patched[x + 2].operand?.ToString().Contains("shakeRotation", StringComparison.Ordinal) == true) //and the next code loads the field shakeRotation
                     {
-                        patched.InsertRange(x+1, new[] //after the color is loaded onto the stack...
+                        patched.InsertRange(x + 1, new[] //after the color is loaded onto the stack...
                         {
                             new CodeInstruction(OpCodes.Ldarg_0), //load this object instance onto the stack
                             applyInstruction //call the apply method; this removes the instance and color from the stack, and returns a modified color
-                        }); 
+                        });
                         Monitor.VerboseLog($"Transpiler inserted a call to {nameof(ApplyTransparency)} at line {x}.");
                         break; //stop after finding 1 match
                     }

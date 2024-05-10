@@ -1,6 +1,5 @@
 ﻿using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
-using StardewValley;
 
 namespace TransparencySettings
 {
