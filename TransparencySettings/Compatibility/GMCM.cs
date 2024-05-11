@@ -1,8 +1,8 @@
-﻿using StardewModdingAPI;
+﻿using GenericModConfigMenu;
+using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using System;
-using GenericModConfigMenu;
 
 namespace TransparencySettings
 {
