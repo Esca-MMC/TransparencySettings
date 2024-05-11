@@ -6,6 +6,8 @@
 * [Settings](#settings)
     * [Object Type Settings](#object-type-settings)
     * [Key Bindings](#key-bindings)
+* [Translation](#translation)
+    * [Available Languages](#available-languages)
 
 
 ## Installation
@@ -43,3 +45,15 @@ Name | Default binding | Description
 -----|-----------------|------------
 DisableTransparency | `Left Shift` + `~` | Disables all custom transparency, reverting to Stardew's default system. Press it again to re-enable your custom settings.
 FullTransparency | `~` | Enables maximum transparency, making all valid object types transparent regardless of distance. Press it again to re-enable your custom settings.
+
+## Translation
+This mod supports translation of its Generic Mod Config Menu (GMCM) setting names and descriptions.
+
+The mod will load a file from the `TransparencySettings/i18n` folder that matches the current language code. If no matching translation exists, it will use [`default.json`](https://github.com/Esca-MMC/TransparencySettings/blob/master/TransparencySettings/i18n/default.json).
+
+See the Stardew Valley Wiki's [Modding:Translations](https://stardewvalleywiki.com/Modding:Translations) page for more information. Please feel free to submit translation files through GitHub, Nexus Mods, ModDrop, or Discord.
+
+### Available Languages
+Language | File | Contributor(s)
+---------|------|------------
+English | [default.json](https://github.com/Esca-MMC/TransparencySettings/blob/master/TransparencySettings/i18n/default.json) | [Esca-MMC](https://github.com/Esca-MMC)
