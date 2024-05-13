@@ -57,3 +57,4 @@ See the Stardew Valley Wiki's [Modding:Translations](https://stardewvalleywiki.c
 Language | File | Contributor(s)
 ---------|------|------------
 English | [default.json](https://github.com/Esca-MMC/TransparencySettings/blob/master/TransparencySettings/i18n/default.json) | [Esca-MMC](https://github.com/Esca-MMC)
+French | [fr.json](https://github.com/Esca-MMC/TransparencySettings/blob/master/TransparencySettings/i18n/fr.json) | [Caranud](https://www.nexusmods.com/users/745980)
