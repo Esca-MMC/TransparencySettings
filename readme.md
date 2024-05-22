@@ -1,5 +1,5 @@
 # Transparency Settings
- A mod for the game Stardew Valley that allows players to customize the distance at which trees, buildings, and certain other large objects become transparent. The mod generates a `config.json` file with detailed options and key bindings.
+ A mod for the game Stardew Valley that allows players to customize the distance at which trees, buildings, and various other objects become transparent. The mod generates a `config.json` file with detailed options and key bindings.
 
 ## Contents
 * [Installation](#installation)
@@ -28,7 +28,7 @@ This mod also supports [spacechase0](https://github.com/spacechase0)'s [Generic 
 ### Object Type Settings
 These settings customize the behavior of each object type that can become transparent.
 
-Note: Some objects cannot be transparent because they are static "hard-coded" features on the in-game texture maps. If a building cannot be built/moved by players (e.g. the main farmhouse) or if a tree/bush cannot be shaken, this mod will **not** make it transparent.
+Note: Some objects can't be made transparent by this mod. Non-interactive objects "drawn" directly on the in-game maps, like town buildings or some trees/bushes, won't be affected.
 
 Name | Valid settings | Description
 -----|----------------|------------
@@ -43,8 +43,8 @@ These settings use SMAPI's [Multi-key bindings](https://stardewvalleywiki.com/Mo
 
 Name | Default binding | Description
 -----|-----------------|------------
-DisableTransparency | `Left Shift` + `~` | Disables all custom transparency, reverting to Stardew's default system. Press it again to re-enable your custom settings.
-FullTransparency | `~` | Enables maximum transparency, making all valid object types transparent regardless of distance. Press it again to re-enable your custom settings.
+DisableTransparency | None | Disables all custom transparency, reverting to Stardew's default system. Press it again to re-enable your custom settings.
+FullTransparency | None | Enables maximum transparency, making all valid object types transparent regardless of distance. Press it again to re-enable your custom settings.
 
 ## Translation
 This mod supports translation of its Generic Mod Config Menu (GMCM) setting names and descriptions.
