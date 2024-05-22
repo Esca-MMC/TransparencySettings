@@ -36,14 +36,14 @@ namespace TransparencySettings
 
     public class KeybindSettings
     {
-        private KeybindList _disableTransparency = new KeybindList(new Keybind(SButton.OemTilde, SButton.LeftShift));
+        private KeybindList _disableTransparency = new KeybindList();
         public KeybindList DisableTransparency
         {
             get { return _disableTransparency; }
             set { _disableTransparency = value ?? new KeybindList(); } //prevent null values
         }
 
-        private KeybindList _fullTransparency = new KeybindList(new Keybind(SButton.OemTilde));
+        private KeybindList _fullTransparency = new KeybindList();
         public KeybindList FullTransparency
         {
             get { return _fullTransparency; }
