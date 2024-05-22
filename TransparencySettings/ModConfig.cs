@@ -12,6 +12,16 @@ namespace TransparencySettings
         };
         public ObjectSettings BushSettings = new ObjectSettings();
         public ObjectSettings TreeSettings = new ObjectSettings();
+        public ObjectSettings ObjectSettings = new ObjectSettings()
+        {
+            Enable = false,
+            TileDistance = 3
+        };
+        public ObjectSettings CraftableSettings = new ObjectSettings()
+        {
+            Enable = false,
+            TileDistance = 3
+        };
         public KeybindSettings KeyBindings = new KeybindSettings();
     }
 
