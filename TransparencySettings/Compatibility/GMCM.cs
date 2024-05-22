@@ -127,6 +127,76 @@ namespace TransparencySettings
                     setValue: (int val) => Config.TreeSettings.TileDistance = val
                 );
 
+                //objects
+                api.AddSectionTitle
+                (
+                    mod: ModManifest,
+                    text: () => Helper.Translation.Get("Object.Title.Name"),
+                    tooltip: () => Helper.Translation.Get("Object.Title.Desc")
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Object.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Object.Enable.Desc"),
+                    getValue: () => Config.ObjectSettings.Enable,
+                    setValue: (bool val) => Config.ObjectSettings.Enable = val
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Object.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Object.Below.Desc"),
+                    getValue: () => Config.ObjectSettings.BelowPlayerOnly,
+                    setValue: (bool val) => Config.ObjectSettings.BelowPlayerOnly = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Object.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Object.Distance.Desc"),
+                    getValue: () => Config.ObjectSettings.TileDistance,
+                    setValue: (int val) => Config.ObjectSettings.TileDistance = val
+                );
+
+                //craftables
+                api.AddSectionTitle
+                (
+                    mod: ModManifest,
+                    text: () => Helper.Translation.Get("Craftable.Title.Name"),
+                    tooltip: () => Helper.Translation.Get("Craftable.Title.Desc")
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Craftable.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Craftable.Enable.Desc"),
+                    getValue: () => Config.CraftableSettings.Enable,
+                    setValue: (bool val) => Config.CraftableSettings.Enable = val
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Craftable.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Craftable.Below.Desc"),
+                    getValue: () => Config.CraftableSettings.BelowPlayerOnly,
+                    setValue: (bool val) => Config.CraftableSettings.BelowPlayerOnly = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Craftable.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Craftable.Distance.Desc"),
+                    getValue: () => Config.CraftableSettings.TileDistance,
+                    setValue: (int val) => Config.CraftableSettings.TileDistance = val
+                );
+
                 //keybinds
                 api.AddSectionTitle
                 (
