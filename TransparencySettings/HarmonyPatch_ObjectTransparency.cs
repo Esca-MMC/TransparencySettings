@@ -42,6 +42,9 @@ namespace TransparencySettings
         {
             try
             {
+                if (!ModEntry.Config.ObjectSettings.Enable && !ModEntry.Config.CraftableSettings.Enable) //if both object types have transparency disabled
+                    return; //do nothing (note: this is slightly faster than checking a net field first)
+
                 ObjectSettings settings; //the settings to use, depending on what kind of object this is
 
                 if (__instance.bigCraftable.Value)

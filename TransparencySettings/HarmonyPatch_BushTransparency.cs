@@ -99,10 +99,6 @@ namespace TransparencySettings
         ///         (?): call static [MonoGame.Framework]Microsoft.Xna.Framework.Color CustomTransparency.HarmonyPatch_BushTransparency::ApplyTransparency([MonoGame.Framework]Microsoft.Xna.Framework.Color originalColor, object instance)
         ///     IL_01f2: ldarg.0
 	    ///     IL_01f3: ldfld float32 StardewValley.TerrainFeatures.Bush::shakeRotation
-        /// 
-        /// 
-        /// 
-        /// 
         /// </remarks>
         private static IEnumerable<CodeInstruction> Bush_draw(IEnumerable<CodeInstruction> instructions)
         {
