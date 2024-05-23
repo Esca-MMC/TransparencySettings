@@ -35,6 +35,7 @@ Name | Valid settings | Description
 Enable | **true** or false | If true, these objects will use your custom transparency settings. If false, they will use Stardew's default transparency system.
 BelowPlayerOnly | **true** or false | If true, these objects will only be transparent when they are "below" the player's vertical position.
 TileDistance | Any integer, e.g. **5** | These objects will be transparent while the player is within this number of tiles. Setting this to a negative number will disable transparency completely (e.g. `"TileDistance": -1`).
+MinimumOpacity | A decimal from 0 to 1, e.g. **0.4** | This is how transparent objects can be. 0 is completely transparent, and 1 is completely visible.
 
 ### Key Bindings
 These settings allows players to customize the key bindings for this mod's transparency toggle buttons.
