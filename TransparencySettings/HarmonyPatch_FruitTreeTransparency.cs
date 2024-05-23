@@ -54,11 +54,11 @@ namespace TransparencySettings
                             (ModEntry.Config.TreeSettings.BelowPlayerOnly == false || CacheManager.CurrentPlayerTile.Y < __instance.Tile.Y) && //OR if the tree is below the player's Y level OR that option is disabled,
                             Vector2.Distance(treeTile, CacheManager.CurrentPlayerTile) < ModEntry.Config.TreeSettings.TileDistance)) //AND if the player is within range of this tree
                         {
-                            alpha.SetValue(CacheManager.GetAlpha(__instance, -0.05f)); //make this tree MORE transparent
+                            alpha.SetValue(CacheManager.GetAlpha(__instance, -0.05f, ModEntry.Config.TreeSettings.MinimumOpacity)); //make this tree MORE transparent
                         }
                         else
                         {
-                            alpha.SetValue(CacheManager.GetAlpha(__instance, 0.05f)); //make this tree LESS transparent
+                            alpha.SetValue(CacheManager.GetAlpha(__instance, 0.05f, ModEntry.Config.TreeSettings.MinimumOpacity)); //make this tree LESS transparent
                         }
                     }
                 }

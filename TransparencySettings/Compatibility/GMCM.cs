@@ -23,6 +23,7 @@ namespace TransparencySettings
                 //register an option for each of this mod's config settings
 
                 //buildings
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,
@@ -57,7 +58,20 @@ namespace TransparencySettings
                     setValue: (int val) => Config.BuildingSettings.TileDistance = val
                 );
 
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Building.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Building.MinimumOpacity.Desc"),
+                    getValue: () => Config.BuildingSettings.MinimumOpacity,
+                    setValue: (float val) => Config.BuildingSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //bushes
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,
@@ -92,7 +106,20 @@ namespace TransparencySettings
                     setValue: (int val) => Config.BushSettings.TileDistance = val
                 );
 
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Bush.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Bush.MinimumOpacity.Desc"),
+                    getValue: () => Config.BushSettings.MinimumOpacity,
+                    setValue: (float val) => Config.BushSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //trees
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,
@@ -127,7 +154,20 @@ namespace TransparencySettings
                     setValue: (int val) => Config.TreeSettings.TileDistance = val
                 );
 
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Tree.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Tree.MinimumOpacity.Desc"),
+                    getValue: () => Config.TreeSettings.MinimumOpacity,
+                    setValue: (float val) => Config.TreeSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //objects
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,
@@ -162,7 +202,20 @@ namespace TransparencySettings
                     setValue: (int val) => Config.ObjectSettings.TileDistance = val
                 );
 
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Object.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Object.MinimumOpacity.Desc"),
+                    getValue: () => Config.ObjectSettings.MinimumOpacity,
+                    setValue: (float val) => Config.ObjectSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //craftables
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,
@@ -197,7 +250,20 @@ namespace TransparencySettings
                     setValue: (int val) => Config.CraftableSettings.TileDistance = val
                 );
 
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Craftable.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Craftable.MinimumOpacity.Desc"),
+                    getValue: () => Config.CraftableSettings.MinimumOpacity,
+                    setValue: (float val) => Config.CraftableSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //keybinds
+
                 api.AddSectionTitle
                 (
                     mod: ModManifest,

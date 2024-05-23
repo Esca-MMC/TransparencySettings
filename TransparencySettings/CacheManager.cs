@@ -16,17 +16,22 @@ namespace TransparencySettings
         /// <summary>A dictionary of in-game objects and the alpha values assigned to them by this mod.</summary>
         private static Dictionary<object, PerScreen<float>> alphas = new Dictionary<object, PerScreen<float>>();
 
-        public static float GetAlpha(object instance, float changeToApply)
+        /// <summary>Adjusts, caches, and returns the current alpha value for the given instance.</summary>
+        /// <param name="instance">The instance for which to get an alpha value, or a unique key representing it.</param>
+        /// <param name="changeToApply">The adjustment to make to this instance's cached alpha value before returning it.</param>
+        /// <param name="minimum">The upper limit of this instance's alpha value.</param>
+        /// <returns>The current alpha value to use for this instance, based its previously cached value and the given arguments.</returns>
+        public static float GetAlpha(object instance, float changeToApply, float minimum)
         {
             if (alphas.TryGetValue(instance, out PerScreen<float> alpha)) //if this instance already has stored alpha values
             {
-                alpha.Value = Utility.Clamp(alpha.Value + changeToApply, 0.4f, 1f); //calculate and set new alpha (min 40%, max 100%)
+                alpha.Value = Utility.Clamp(alpha.Value + changeToApply, minimum, 1f); //calculate and set new alpha
                 return alpha.Value;
             }
             else
             {
                 alpha = new PerScreen<float>(); //create new storage for this instance's alpha values
-                alpha.Value = Utility.Clamp(1f + changeToApply, 0.4f, 1f); //calculate and set new alpha (min 40%, max 100%; default value 100%)
+                alpha.Value = Utility.Clamp(1f + changeToApply, minimum, 1f); //calculate and set new alpha, starting with a default value of 100%
                 alphas.Add(instance, alpha); //store this instance's alpha values
                 return alpha.Value;
             }

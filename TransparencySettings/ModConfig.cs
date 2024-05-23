@@ -25,13 +25,14 @@ namespace TransparencySettings
         public KeybindSettings KeyBindings = new KeybindSettings();
     }
 
-    /* Setting collections (used for descriptive organization in the config.json file) */
+    /* Setting collection classes */
 
     public class ObjectSettings
     {
         public bool Enable = true;
         public bool BelowPlayerOnly = true;
         public int TileDistance = 5;
+        public float MinimumOpacity = 0.4f;
     }
 
     public class KeybindSettings

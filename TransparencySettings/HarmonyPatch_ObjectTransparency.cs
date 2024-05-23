@@ -58,11 +58,11 @@ namespace TransparencySettings
                         (settings.BelowPlayerOnly == false || CacheManager.CurrentPlayerTile.Y < y) && //and the object is below the player's Y level OR that option is disabled
                         Utility.distance(x, CacheManager.CurrentPlayerTile.X, y, CacheManager.CurrentPlayerTile.Y) < settings.TileDistance)) //and if the player is within range
                     {
-                        alpha = CacheManager.GetAlpha(__instance, -0.05f); //make this object MORE transparent
+                        alpha = CacheManager.GetAlpha(__instance, -0.05f, settings.MinimumOpacity); //make this object MORE transparent
                     }
                     else
                     {
-                        alpha = CacheManager.GetAlpha(__instance, 0.05f); //make this object LESS transparent
+                        alpha = CacheManager.GetAlpha(__instance, 0.05f, settings.MinimumOpacity); //make this object LESS transparent
                     }
                 }
             }

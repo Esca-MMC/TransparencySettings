@@ -50,9 +50,9 @@ namespace TransparencySettings
                         var alpha = Helper.Reflection.GetField<float>(__instance, "alpha", true); //get the building's alpha field
 
                         if (ShouldBeTransparent(__instance)) //if this building should be MORE transparent this tick
-                            alpha.SetValue(CacheManager.GetAlpha(__instance, -0.05f));
+                            alpha.SetValue(CacheManager.GetAlpha(__instance, -0.05f, ModEntry.Config.BuildingSettings.MinimumOpacity));
                         else //if this building should be LESS transparent this tick
-                            alpha.SetValue(CacheManager.GetAlpha(__instance, 0.05f));
+                            alpha.SetValue(CacheManager.GetAlpha(__instance, 0.05f, ModEntry.Config.BuildingSettings.MinimumOpacity));
                     }
                 }
             }

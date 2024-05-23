@@ -63,11 +63,11 @@ namespace TransparencySettings
                             (ModEntry.Config.BushSettings.BelowPlayerOnly == false || CacheManager.CurrentPlayerTile.Y < __instance.Tile.Y) && //AND if the bush is below the player's Y level OR that option is disabled,
                             Vector2.Distance(new Vector2(centerPixel.X, centerPixel.Y), CacheManager.CurrentPlayerTile * Game1.tileSize) < (ModEntry.Config.BushSettings.TileDistance * Game1.tileSize))) //AND if the player is within range of this bush's center pixel
                         {
-                            CacheManager.GetAlpha(__instance, -0.05f); //increase transparency in this bush's cached alpha
+                            CacheManager.GetAlpha(__instance, -0.05f, ModEntry.Config.BushSettings.MinimumOpacity); //increase transparency in this bush's cached alpha
                         }
                         else
                         {
-                            CacheManager.GetAlpha(__instance, 0.05f); //decrease transparency in this bush's cached alpha
+                            CacheManager.GetAlpha(__instance, 0.05f, ModEntry.Config.BushSettings.MinimumOpacity); //decrease transparency in this bush's cached alpha
                         }
                     }
                 }
@@ -144,7 +144,7 @@ namespace TransparencySettings
         /// <returns>The color with this object's alpha transparency level applied.</returns>
         private static Color ApplyTransparency(Color originalColor, object instance)
         {
-            return originalColor * CacheManager.GetAlpha(instance, 0f); //return the color multiplied by this object's current alpha transparency level
+            return originalColor * CacheManager.GetAlpha(instance, 0f, ModEntry.Config.BushSettings.MinimumOpacity); //return the color multiplied by this object's current alpha transparency level
         }
     }
 }
