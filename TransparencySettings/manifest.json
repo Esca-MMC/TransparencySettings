@@ -1,7 +1,7 @@
 ﻿{
   "Name": "Transparency Settings",
   "Author": "Esca",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "Description": "Adds settings to control the transparency of trees and other large objects.",
   "UniqueID": "Esca.TransparencySettings",
   "EntryDll": "TransparencySettings.dll",
