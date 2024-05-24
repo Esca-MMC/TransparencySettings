@@ -5,21 +5,27 @@ namespace TransparencySettings
     /// <summary>This mod's config.json setting data.</summary>
     public class ModConfig
     {
-        public ObjectSettings BuildingSettings = new ObjectSettings()
+        public ObjectSettings BuildingSettings = new ObjectSettings();
+        public ObjectSettings BushSettings = new ObjectSettings()
         {
-            TileDistance = 3
+            TileDistance = 5 //helps with object size
         };
-        public ObjectSettings BushSettings = new ObjectSettings();
-        public ObjectSettings TreeSettings = new ObjectSettings();
+        public ObjectSettings TreeSettings = new ObjectSettings()
+        {
+            TileDistance = 5 //helps with object size
+        };
+        public ObjectSettings GrassSettings = new ObjectSettings()
+        {
+            BelowPlayerOnly = false, //looks a bit weird otherwise
+            MinimumOpacity = 0.3f //helps with overlapping textures
+        };
         public ObjectSettings ObjectSettings = new ObjectSettings()
         {
-            Enable = false,
-            TileDistance = 3
+            Enable = false
         };
         public ObjectSettings CraftableSettings = new ObjectSettings()
         {
-            Enable = false,
-            TileDistance = 3
+            Enable = false
         };
         public KeybindSettings KeyBindings = new KeybindSettings();
     }
@@ -30,7 +36,7 @@ namespace TransparencySettings
     {
         public bool Enable = true;
         public bool BelowPlayerOnly = true;
-        public int TileDistance = 5;
+        public int TileDistance = 3;
         public float MinimumOpacity = 0.4f;
     }
 

@@ -166,6 +166,54 @@ namespace TransparencySettings
                     interval: 0.01f
                 );
 
+                //grass
+
+                api.AddSectionTitle
+                (
+                    mod: ModManifest,
+                    text: () => Helper.Translation.Get("Grass.Title.Name"),
+                    tooltip: () => Helper.Translation.Get("Grass.Title.Desc")
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Grass.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Grass.Enable.Desc"),
+                    getValue: () => Config.GrassSettings.Enable,
+                    setValue: (bool val) => Config.GrassSettings.Enable = val
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Grass.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Grass.Below.Desc"),
+                    getValue: () => Config.GrassSettings.BelowPlayerOnly,
+                    setValue: (bool val) => Config.GrassSettings.BelowPlayerOnly = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Grass.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Grass.Distance.Desc"),
+                    getValue: () => Config.GrassSettings.TileDistance,
+                    setValue: (int val) => Config.GrassSettings.TileDistance = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Grass.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Grass.MinimumOpacity.Desc"),
+                    getValue: () => Config.GrassSettings.MinimumOpacity,
+                    setValue: (float val) => Config.GrassSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //objects
 
                 api.AddSectionTitle
