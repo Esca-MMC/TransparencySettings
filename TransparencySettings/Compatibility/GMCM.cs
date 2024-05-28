@@ -18,7 +18,20 @@ namespace TransparencySettings
                 if (api == null) //if the API is not available
                     return;
 
-                api.Register(ModManifest, () => Config = new ModConfig(), () => Helper.WriteConfig(Config)); //register the mod's menu, define its reset/save actions, and allow in-game changes
+                api.Register //register the mod's menu, define its reset/save actions, and allow in-game changes
+                (
+                    mod: ModManifest, 
+                    reset: () =>
+                    {
+                        Config = new ModConfig();
+                        CacheManager.ClearCache(); //reset cache whenever settings change
+                    },
+                    save: () =>
+                    {
+                        Helper.WriteConfig(Config);
+                        CacheManager.ClearCache();
+                    }
+                ); 
 
                 //register an option for each of this mod's config settings
 

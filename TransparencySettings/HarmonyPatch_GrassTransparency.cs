@@ -49,7 +49,7 @@ namespace TransparencySettings
             {
                 if (ModEntry.Config.GrassSettings.Enable && Game1.player.currentLocation is GameLocation location) //if this type of custom transparency is enabled AND the local player's location isn't null
                 {
-                    foreach (var tf in location.terrainFeatures.Values) //for each terrain feature at the l
+                    foreach (var tf in location.terrainFeatures.Values)
                     {
                         if (tf is Grass grass)
                         {
