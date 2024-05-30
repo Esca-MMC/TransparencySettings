@@ -227,6 +227,54 @@ namespace TransparencySettings
                     interval: 0.01f
                 );
 
+                //crops
+
+                api.AddSectionTitle
+                (
+                    mod: ModManifest,
+                    text: () => Helper.Translation.Get("Crop.Title.Name"),
+                    tooltip: () => Helper.Translation.Get("Crop.Title.Desc")
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Crop.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Crop.Enable.Desc"),
+                    getValue: () => Config.CropSettings.Enable,
+                    setValue: (bool val) => Config.CropSettings.Enable = val
+                );
+
+                api.AddBoolOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Crop.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Crop.Below.Desc"),
+                    getValue: () => Config.CropSettings.BelowPlayerOnly,
+                    setValue: (bool val) => Config.CropSettings.BelowPlayerOnly = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Crop.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Crop.Distance.Desc"),
+                    getValue: () => Config.CropSettings.TileDistance,
+                    setValue: (int val) => Config.CropSettings.TileDistance = val
+                );
+
+                api.AddNumberOption
+                (
+                    mod: ModManifest,
+                    name: () => Helper.Translation.Get("Crop.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Crop.MinimumOpacity.Desc"),
+                    getValue: () => Config.CropSettings.MinimumOpacity,
+                    setValue: (float val) => Config.CropSettings.MinimumOpacity = val,
+                    min: 0f,
+                    max: 1f,
+                    interval: 0.01f
+                );
+
                 //objects
 
                 api.AddSectionTitle
