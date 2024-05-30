@@ -20,7 +20,7 @@ namespace TransparencySettings
 
                 api.Register //register the mod's menu, define its reset/save actions, and allow in-game changes
                 (
-                    mod: ModManifest, 
+                    mod: ModManifest,
                     reset: () =>
                     {
                         Config = new ModConfig();
@@ -31,7 +31,7 @@ namespace TransparencySettings
                         Helper.WriteConfig(Config);
                         CacheManager.ClearCache();
                     }
-                ); 
+                );
 
                 //register an option for each of this mod's config settings
 
