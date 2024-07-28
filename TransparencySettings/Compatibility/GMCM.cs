@@ -47,8 +47,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Building.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Building.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.BuildingSettings.Enable,
                     setValue: (bool val) => Config.BuildingSettings.Enable = val
                 );
@@ -56,8 +56,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Building.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Building.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.BuildingSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.BuildingSettings.BelowPlayerOnly = val
                 );
@@ -65,8 +65,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Building.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Building.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.BuildingSettings.TileDistance,
                     setValue: (int val) => Config.BuildingSettings.TileDistance = val
                 );
@@ -74,8 +74,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Building.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Building.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.BuildingSettings.MinimumOpacity,
                     setValue: (float val) => Config.BuildingSettings.MinimumOpacity = val,
                     min: 0f,
@@ -95,8 +95,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Bush.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Bush.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.BushSettings.Enable,
                     setValue: (bool val) => Config.BushSettings.Enable = val
                 );
@@ -104,8 +104,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Bush.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Bush.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.BushSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.BushSettings.BelowPlayerOnly = val
                 );
@@ -113,8 +113,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Bush.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Bush.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.BushSettings.TileDistance,
                     setValue: (int val) => Config.BushSettings.TileDistance = val
                 );
@@ -122,8 +122,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Bush.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Bush.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.BushSettings.MinimumOpacity,
                     setValue: (float val) => Config.BushSettings.MinimumOpacity = val,
                     min: 0f,
@@ -143,8 +143,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Tree.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Tree.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.TreeSettings.Enable,
                     setValue: (bool val) => Config.TreeSettings.Enable = val
                 );
@@ -152,8 +152,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Tree.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Tree.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.TreeSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.TreeSettings.BelowPlayerOnly = val
                 );
@@ -161,8 +161,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Tree.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Tree.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.TreeSettings.TileDistance,
                     setValue: (int val) => Config.TreeSettings.TileDistance = val
                 );
@@ -170,8 +170,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Tree.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Tree.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.TreeSettings.MinimumOpacity,
                     setValue: (float val) => Config.TreeSettings.MinimumOpacity = val,
                     min: 0f,
@@ -191,8 +191,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Grass.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Grass.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.GrassSettings.Enable,
                     setValue: (bool val) => Config.GrassSettings.Enable = val
                 );
@@ -200,8 +200,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Grass.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Grass.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.GrassSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.GrassSettings.BelowPlayerOnly = val
                 );
@@ -209,8 +209,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Grass.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Grass.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.GrassSettings.TileDistance,
                     setValue: (int val) => Config.GrassSettings.TileDistance = val
                 );
@@ -218,8 +218,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Grass.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Grass.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.GrassSettings.MinimumOpacity,
                     setValue: (float val) => Config.GrassSettings.MinimumOpacity = val,
                     min: 0f,
@@ -239,8 +239,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Crop.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Crop.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.CropSettings.Enable,
                     setValue: (bool val) => Config.CropSettings.Enable = val
                 );
@@ -248,8 +248,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Crop.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Crop.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.CropSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.CropSettings.BelowPlayerOnly = val
                 );
@@ -257,8 +257,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Crop.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Crop.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.CropSettings.TileDistance,
                     setValue: (int val) => Config.CropSettings.TileDistance = val
                 );
@@ -266,8 +266,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Crop.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Crop.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.CropSettings.MinimumOpacity,
                     setValue: (float val) => Config.CropSettings.MinimumOpacity = val,
                     min: 0f,
@@ -287,8 +287,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Object.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Object.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.ObjectSettings.Enable,
                     setValue: (bool val) => Config.ObjectSettings.Enable = val
                 );
@@ -296,8 +296,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Object.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Object.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.ObjectSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.ObjectSettings.BelowPlayerOnly = val
                 );
@@ -305,8 +305,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Object.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Object.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.ObjectSettings.TileDistance,
                     setValue: (int val) => Config.ObjectSettings.TileDistance = val
                 );
@@ -314,8 +314,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Object.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Object.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.ObjectSettings.MinimumOpacity,
                     setValue: (float val) => Config.ObjectSettings.MinimumOpacity = val,
                     min: 0f,
@@ -335,8 +335,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Craftable.Enable.Name"),
-                    tooltip: () => Helper.Translation.Get("Craftable.Enable.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Enable.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Enable.Desc"),
                     getValue: () => Config.CraftableSettings.Enable,
                     setValue: (bool val) => Config.CraftableSettings.Enable = val
                 );
@@ -344,8 +344,8 @@ namespace TransparencySettings
                 api.AddBoolOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Craftable.Below.Name"),
-                    tooltip: () => Helper.Translation.Get("Craftable.Below.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Below.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Below.Desc"),
                     getValue: () => Config.CraftableSettings.BelowPlayerOnly,
                     setValue: (bool val) => Config.CraftableSettings.BelowPlayerOnly = val
                 );
@@ -353,8 +353,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Craftable.Distance.Name"),
-                    tooltip: () => Helper.Translation.Get("Craftable.Distance.Desc"),
+                    name: () => Helper.Translation.Get("Shared.Distance.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.Distance.Desc"),
                     getValue: () => Config.CraftableSettings.TileDistance,
                     setValue: (int val) => Config.CraftableSettings.TileDistance = val
                 );
@@ -362,8 +362,8 @@ namespace TransparencySettings
                 api.AddNumberOption
                 (
                     mod: ModManifest,
-                    name: () => Helper.Translation.Get("Craftable.MinimumOpacity.Name"),
-                    tooltip: () => Helper.Translation.Get("Craftable.MinimumOpacity.Desc"),
+                    name: () => Helper.Translation.Get("Shared.MinimumOpacity.Name"),
+                    tooltip: () => Helper.Translation.Get("Shared.MinimumOpacity.Desc"),
                     getValue: () => Config.CraftableSettings.MinimumOpacity,
                     setValue: (float val) => Config.CraftableSettings.MinimumOpacity = val,
                     min: 0f,
