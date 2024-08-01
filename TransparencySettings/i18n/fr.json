@@ -4,7 +4,7 @@
   "Shared.Below.Name": "Sous le joueur uniquement",
   "Shared.Below.Desc": "Si cette case est cochée, les objets ne seront transparents que s'ils sont verticalement inférieurs à votre personnage.",
   "Shared.Distance.Name": "Cases de distance",
-  "Shared.Distance.Desc": "Si le nombre de tuiles entre votre personnage et un objet est inférieur à ce réglage, l'objet sera transparent.",
+  "Shared.Distance.Desc": "Si le nombre de cases entre votre personnage et un objet est inférieur à ce réglage, l'objet sera transparent.",
   "Building.Title.Name": "Paramètres des bâtiments",
   "Building.Title.Desc": "Paramètres de transparence pour les bâtiments de ferme construits par le joueur.",
   "Bush.Title.Name": "Paramètres des buissons",
