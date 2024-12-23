@@ -3,13 +3,13 @@
   <PropertyGroup>
     <AssemblyName>TransparencySettings</AssemblyName>
     <RootNamespace>TransparencySettings</RootNamespace>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <TargetFramework>net6.0</TargetFramework>
     <EnableHarmony>true</EnableHarmony>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.3.2" />
   </ItemGroup>
 
 </Project>
